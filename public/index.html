@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Play Summary</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="./jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="https://kit.fontawesome.com/895e810d5f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<p>
-    play summary
-</p>
+<div class="main">
+    <div class="box">
+        <h2>
+            Play Summary
+        </h2>
+        <div class="player">
+            <div id="waveform">
+
+            </div>
+            <div>
+                <p class="subs">xyz</p>
+            </div>
+            <div class="functional">
+                <div class="buttons">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <button class="btn play" type="button" id="play_pause" >Play/Pause<i class="fas fa-play"></i></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn sound" type="button" id="mute_unmute">Mute/UnMute<i class="fas fa-volume-mute"></i></button>
+                        </li>
+                    </ul>
+                    <div id="slider"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./main.js"></script>
 </body>
 </html>

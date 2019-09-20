@@ -1,0 +1,62 @@
+
+body{
+
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0d161f;
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+h2{
+    text-align: center;
+    color: #245958;
+}
+.player{
+    width: 500px;
+}
+
+.functional{
+    text-align: center;
+}
+.buttons{
+    display: inline-block;
+}
+button{
+    padding: 5px 15px!important;
+    margin: 0 5px!important;
+    background-color: #245958!important;
+    color: white!important;
+}
+
+button i {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#slider {
+    width: 150px;
+    height: 15px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+#slider.ui-slider {
+    background-color: #245958;
+}
+
+#slider .ui-slider-handle {
+    display: none;
+}
