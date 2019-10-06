@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Play Summary</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
     <link href="./style.css" rel="stylesheet">
     <link rel="stylesheet" href="./jquery-ui.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
     <script src="./jquery-3.3.1.min.js"></script>
     <script src="./jquery-ui.min.js"></script>
     <script src="https://unpkg.com/wavesurfer.js"></script>
@@ -23,22 +29,31 @@
             <div id="waveform">
 
             </div>
-            <div>
+            <div class="text-center">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <div class="subs_area hide">
                 <p class="subs">xyz</p>
             </div>
             <div class="functional">
                 <div class="buttons">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <button class="btn play" type="button" id="play_pause" >Play/Pause<i class="fas fa-play"></i></button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="btn sound" type="button" id="mute_unmute">Mute/UnMute<i class="fas fa-volume-mute"></i></button>
-                        </li>
-                    </ul>
+                    <button class="btn play" type="button" id="play_pause">Play/Pause<i class="fas fa-play"></i>
+                    </button>
+                    <button class="btn sound" type="button" id="mute_unmute">Mute/UnMute<i class="fas fa-volume-mute"></i></button>
+                    <button class="btn" type="button" id="prev"><i class="fas fa-arrow-left"></i>Previous</button>
+                    <button class="btn" type="button" id="next">Next<i class="fas fa-arrow-right"></i></button>
+                    <button class="btn" type="button" id="full_short">Play Full Audio</button>
                     <div id="slider"></div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="transcript_text">
+        <button class="btn" type="button" id="show_text">See Full Transcript</button>
+        <div>
+            <p class="transcript"><span class="left"></span><span class="centre"></span><span class="right"></span></p>
         </div>
     </div>
 </div>
