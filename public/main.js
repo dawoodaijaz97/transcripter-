@@ -144,8 +144,8 @@ $("document").ready(function () {
         pixelRatio:1,
         barWidth:3
     });
-    // wavesurfer.load('https://storage.googleapis.com/music-app-bucket-3/audio_file.mp3');
-    wavesurfer.load('./files/audio_file.mp3');
+    wavesurfer.load('https://storage.googleapis.com/music-app-bucket-3/audio_file.mp3');
+
 
 
     wavesurfer.on("ready", function () {

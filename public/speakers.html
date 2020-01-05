@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Play Summary</title>
+    <link href="./style2.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="./jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="./jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/895e810d5f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="main">
+    <div class="box">
+        <h2>
+            Play Transcript
+        </h2>
+        <div class="player">
+            <figure class="audio-container">
+                <audio src="">Your
+                    browser does not support the
+                    <code>audio</code> element.
+                </audio>
+            </figure>
+            <div id="slider" class="my-progress-bar"></div>
+            <div class="subs_area">
+                <p><span class="left"></span><span class="word">google</span><span class="right">dsdsd</span></p>
+            </div>
+
+        </div>
+        <div class="options">
+            <div>
+                <button class="btn copy">Copy All</button>
+                <button class="btn set_speaker">Set Speakers</button>
+            </div>
+            <div class="speaker-cont">
+                <form class="my-form">
+                    <div class="form-row">
+
+                    </div>
+                    <button class="btn set_names" type="button">Apply</button>
+                </form>
+            </div>
+        </div>
+        <div class="full_transcript">
+            <p></p>
+        </div>
+    </div>
+    <div>
+        <button type="button" class="btn hover p_btn play"><i class="fas fa-play"></i><i class="fas fa-pause"></i>
+        </button>
+    </div>
+</div>
+<script src="playerHandler.js"></script>
+<script type="module" src="speaker.js"></script>
+<script type="module" src="TranscriptPlayer.js"></script>
+</body>
+</html>

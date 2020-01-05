@@ -49,7 +49,7 @@ Wavesurfer.js for MP3 player
 4a. Incase of speaker.html add the mp3 file path to following 
 <audio controls src="/path.mp3">
 
-4b.Add the path of "summary script JSON" file to   "await fetch("./files/summary_sentences.json") in the read_json function in main3.js"
+4b.Add the path of "summary script JSON" file to   "await fetch("./files/summary_sentences.json") in the read_json function in playerHandler.js"
 
 
 `

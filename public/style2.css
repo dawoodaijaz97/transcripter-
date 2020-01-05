@@ -1,6 +1,6 @@
 
 body {
-    background-color: #0d161f!important;
+    background-color: #0d161f !important;
     width: 100%;
     height: 100%;
 }
@@ -15,31 +15,34 @@ body {
     width: 100%;
     height: auto;
 }
-.box{
+
+.box {
     width: 80% !important;
 }
-.player{
+
+.player {
     width: 60%;
     margin-right: auto;
     margin-left: auto;
 }
 
-.transcript_text{
+.transcript_text {
     margin-top: 35px;
     width: 75% !important;
     text-align: center;
 
 }
-.btn{
+
+.btn {
     width: 100%;
 }
-.transcript_text .btn{
+
+.transcript_text .btn {
     width: 130px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
 }
-
 
 p {
     text-align: center;
@@ -52,7 +55,18 @@ h2 {
     color: #245958;
 }
 
+.audio-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
 
+audio {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 300px;
+}
 
 .functional {
     text-align: center;
@@ -62,26 +76,29 @@ h2 {
 .buttons {
     display: inline-block;
 }
-.nav-item{
+
+.nav-item {
     width: 45% !important;
     margin-left: 5px;
     margin-right: 5px;
 
 }
-.buttons{
-    width: 350px;
-}
-.hide{
+
+
+.hide {
     display: none;
 }
+
 
 button {
     padding: 5px 0 !important;
     margin: 5px !important;
     background-color: #245958 !important;
     color: white !important;
-    width: 40%;
-    font-size: 13px!important;
+    width: 50px;
+    height: 50px;
+    font-size: 13px !important;
+    border-radius: 50px!important;
 
 }
 
@@ -89,12 +106,40 @@ button i {
     margin-right: 5px;
     margin-left: 5px;
 }
+.hover{
+    position: fixed;
+    top:90%;
+    left: 3%;
+    width: 50px;
+    height: 50px;
+}
+.options{
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+.options .btn{
+    width: 65px;
+    height: 65px;
+    border-radius: 65px;
 
+}
+.options div{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.speaker-cont{
+    width: 500px;
+    height: auto;
+}
+.form-row div{
+    margin: 15px 0 !important;
+}
 #slider {
     width: 150px;
     height: 15px;
-    margin: 0 auto;
-    margin-top: 10px;
+    margin: 10px auto 0;
 }
 
 #slider.ui-slider {
@@ -104,46 +149,51 @@ button i {
 #slider .ui-slider-handle {
     display: none;
 }
+.my-progress-bar{
+    width: 300px!important;
+    height: 10px!important;
+    margin-bottom: 20px!important;
+}
 
 .word {
     background-color: red;
 }
-.centre{
+
+.centre {
     background-color: red;
 }
-.full_transcript p{
+
+.full_transcript p {
     text-align: left;
 }
-.spk{
+
+.spk {
     color: #ad0000;
 }
 
 @media screen and (max-width: 780px) {
 
-    .main{
-        align-content:center!important;
+    .main {
+        align-content: center !important;
 
     }
+
     .box {
         width: 100% !important;
     }
 
-
-    .player {
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .subs_area{
+    .subs_area {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
+
     p {
-        font-size:11px;
+        font-size: 11px;
 
     }
-    .buttons{
+
+    .buttons {
         width: 100%;
     }
 
