@@ -20,6 +20,7 @@ let no_speakers;
 $("document").ready(function () {
 
 
+    $(".p_btn").attr("disabled",true);
     $(".speaker-cont").hide();
     $(".set_speaker").on("click", function () {
         $(".speaker-cont").toggle();
@@ -230,6 +231,7 @@ $("document").ready(function () {
     audio.oncanplay = function () {
         read_json($("audio").attr("transcript"));
         total_duration = audio.duration;
+        $(".p_btn").attr("disabled",false);
         console.log("Total duraton" + total_duration);
     };
 
